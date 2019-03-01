@@ -1,0 +1,302 @@
+/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+body {
+  margin: 0 auto;
+  padding: 5% 20%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* CSS RESET DONE - BELOW ALL OTHER WORK */
+
+/* ARTIST SECTION */
+
+img {
+  width: 100%;
+}
+
+.artists__hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+}
+
+.artists__hovereffect .artists__hovereffect--overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(255, 0, 0, 0.65);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.artists__hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.artists__hovereffect a.info {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+  padding: 0.7rem 1.4rem;
+}
+
+.artists__hovereffect a.info:hover {
+  background-color: white;
+  color: red;
+}
+
+.artists__hovereffect:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.artists__hovereffect:hover .artists__hovereffect--overlay {
+  opacity: 1;
+}
+
+.artists__hovereffect:hover a.info {
+  opacity: 1;
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+}
+
+/* ARTIST SECTION DONE */
+
+/* EXHBITIONS SECTION */
+
+.exhibitions {
+  margin-top: 5.6rem;
+}
+
+.exhibitions__img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/exhibitions.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.exhibitions__img--type {
+  color: white;
+  padding: 25%;
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active,
+.btn-light.active,
+.btn-light:active:focus,
+.open > .dropdown-toggle.btn-light {
+  color: #fff !important;
+  background-color: red !important;
+  border: 1px solid red !important;
+}
+
+.centered {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+/* EXHBITIONS SECTION DONE */
+
+/* NEWS SECTION */
+
+.news {
+  margin-top: 5.6rem;
+  margin-bottom: 8rem;
+}
+
+.news__img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/news.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.news__img--type {
+  color: white;
+  padding: 20%;
+}
+
+/* NEWS SECTION DONE*/
